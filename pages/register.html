@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | StudentHub Portal</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="../images/logo.png" alt="Logo">
+        <h2>StudentHub</h2>
+    </div>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="result.html">Results</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+
+<section class="about">
+
+    <h2>Create New Account</h2>
+
+
+    <form id="registrationForm">
+
+        <!-- NAME -->
+
+        <label>Full Name</label>
+
+        <input type="text"
+               id="name"
+               placeholder="Enter Full Name">
+
+        <p id="nameError" class="error"></p>
+
+
+        <!-- EMAIL -->
+
+        <label>Email</label>
+
+        <input type="email"
+               id="email"
+               placeholder="Enter Email Address">
+
+        <p id="emailError" class="error"></p>
+
+
+        <!-- MOBILE -->
+
+        <label>Mobile Number</label>
+
+        <input type="tel"
+               id="mobile"
+               placeholder="Enter 10 Digit Mobile Number">
+
+        <p id="mobileError" class="error"></p>
+
+
+        <!-- PASSWORD -->
+
+        <label>Password</label>
+
+        <input type="password"
+               id="password"
+               placeholder="Create Password">
+
+        <p id="passwordError" class="error"></p>
+
+
+        <!-- CONFIRM PASSWORD -->
+
+        <label>Confirm Password</label>
+
+        <input type="password"
+               id="confirmPassword"
+               placeholder="Confirm Password">
+
+        <p id="confirmPasswordError" class="error"></p>
+
+
+        <!-- COURSE -->
+
+        <label>Course</label>
+
+        <select id="course">
+
+            <option value="">
+                Select Course
+            </option>
+
+            <option value="Computer Engineering">
+                Computer Engineering
+            </option>
+
+            <option value="Information Technology">
+                Information Technology
+            </option>
+
+            <option value="Data Science">
+                Data Science
+            </option>
+
+            <option value="Artificial Intelligence">
+                Artificial Intelligence
+            </option>
+
+        </select>
+
+        <p id="courseError" class="error"></p>
+
+
+        <!-- YEAR -->
+
+        <label>Year</label>
+
+        <select id="year">
+
+            <option value="">
+                Select Year
+            </option>
+
+            <option value="First Year">
+                First Year
+            </option>
+
+            <option value="Second Year">
+                Second Year
+            </option>
+
+            <option value="Third Year">
+                Third Year
+            </option>
+
+            <option value="Fourth Year">
+                Fourth Year
+            </option>
+
+        </select>
+
+        <p id="yearError" class="error"></p>
+
+
+        <!-- GENDER -->
+
+        <label>Gender</label>
+
+        <input type="radio"
+               name="gender"
+               value="Male">
+
+        Male
+
+        <input type="radio"
+               name="gender"
+               value="Female">
+
+        Female
+
+        <input type="radio"
+               name="gender"
+               value="Other">
+
+        Other
+
+        <p id="genderError" class="error"></p>
+
+
+        <!-- TERMS -->
+
+        <label>
+
+            <input type="checkbox"
+                   id="terms">
+
+            I accept the Terms and Conditions
+
+        </label>
+
+        <p id="termsError" class="error"></p>
+
+
+        <!-- REGISTER BUTTON -->
+
+        <button class="btn"
+                type="submit">
+
+            Register
+
+        </button>
+
+
+        <p id="successMessage"
+           class="success">
+        </p>
+
+    </form>
+
+
+    <br>
+
+
+    <p>
+
+        Already have an account?
+
+        <a href="login.html">
+            Login Here
+        </a>
+
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 StudentHub Portal | All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- PRACTICAL 5 JAVASCRIPT -->
+
+<script src="../js/register.js"></script>
+
+</body>
+
+</html>
